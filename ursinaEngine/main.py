@@ -11,7 +11,9 @@ def update():
     elif held_keys['d']:
         cam.x += 1 * time.dt
 
-
+print("--attempting to install ursina library with pip--")
+os.system("pip install ursina")
+print("--done--")
 app = Ursina()
 approLogo_texture = load_texture('textures/approachcircle.bmp')
 cam_texture = load_texture('textures/cam.png')
